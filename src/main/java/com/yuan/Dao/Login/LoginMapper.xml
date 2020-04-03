@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.yuan.Dao.Login.LoginDao">
-
-
-
-	
-	
-	
+    <!-- 登录验证 -->
+    <select id="QueryUserLogin" parameterType="com.yuan.model.Userinfo" resultType="com.yuan.model.Userinfo">
+        select tb_user.* from tb_user
+        <where>
+            1=1
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="userlogin != null">
+                and userlogin = #{userlogin}
+            </if>
+            <if test="userpwd != null">
+                and userpwd = #{userpwd}
+            </if>
+        </where>
+    </select>
 </mapper>

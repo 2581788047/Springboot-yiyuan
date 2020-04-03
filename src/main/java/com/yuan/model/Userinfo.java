@@ -9,6 +9,15 @@ public class Userinfo {
     private String useradress;//地址
     private String department;//部门
     private String sex;//性别
+    private String loginstatus;//性别
+
+    public String getLoginstatus() {
+        return loginstatus;
+    }
+
+    public void setLoginstatus(String loginstatus) {
+        this.loginstatus = loginstatus;
+    }
 
     public String getId() {
         return id;
