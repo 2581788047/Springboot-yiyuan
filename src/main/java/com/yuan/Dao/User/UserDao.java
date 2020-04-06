@@ -1,4 +1,9 @@
 package com.yuan.Dao.User;
 
-public class UserDao {
+import com.yuan.model.Userinfo;
+
+import java.util.List;
+
+public interface UserDao {
+    List<Userinfo> queryuserListDao(Userinfo userinfo);
 }

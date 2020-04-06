@@ -1,6 +1,10 @@
 package com.yuan.Service.User;
 
-public interface Userservice {
+import com.yuan.model.Userinfo;
 
+import java.util.List;
+
+public interface Userservice {
+    List<Userinfo> queryuserinfoService(Userinfo userinfo);
 
 }
