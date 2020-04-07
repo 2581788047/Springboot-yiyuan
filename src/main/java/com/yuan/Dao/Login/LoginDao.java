@@ -5,7 +5,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 
 @Mapper
-@Component(value = "Userinfo")
+@Component(value = "UserinfoDao")
 public interface LoginDao {
   Userinfo QueryUserLogin(Userinfo userinfo);
 
