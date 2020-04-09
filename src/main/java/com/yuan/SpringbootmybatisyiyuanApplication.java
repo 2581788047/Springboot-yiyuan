@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @ServletComponentScan
 @EnableScheduling
 public class SpringbootmybatisyiyuanApplication {
-
+/*启动类*/
     public static void main(String[] args) {
         SpringApplication.run(SpringbootmybatisyiyuanApplication.class, args);
     }

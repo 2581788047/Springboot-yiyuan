@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 @Mapper
 @Component(value = "UserinfoDao")
 public interface LoginDao {
+  /*登录查询接口*/
   Userinfo QueryUserLogin(Userinfo userinfo);
 
 
